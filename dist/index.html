@@ -1,29 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="./css/output.css">
-    <title>LearnMore Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-<body>
-    <!-- navigation bar start -->
-     <nav class="grid grid-cols-7 bg-primary ">
-        <div class="flex justify-center p-3 items-center gap-2 text-white col-span-2">
-            <img src="./assets/images/logo.png" class="h-12" alt="">
-            <h1 class="font-sans text-[18px] font-semibold">Learn More Academy</h1>
-        </div>
 
-        <div class="col-span-5">
-            <ul class="flex ml-12 mx-auto gap-16 items-center h-full ">
-                <li class="ml-16"><a class="font-semibold text-[17px] text-secondary underline" href="">Home</a></li>
-                <li><a class="font-semibold text-[17px] text-white hover:text-secondary hover:underline" href="">Courses</a></li>
-                <li><a class="font-semibold text-[17px] text-white hover:text-secondary hover:underline" href="">About Us</a></li>
-                <li><a class="font-semibold text-[17px] text-white hover:text-secondary hover:underline" href="">Gallery</a></li>
-                <li><a class="font-semibold text-[17px] text-white hover:text-secondary hover:underline" href="">Contact Us</a></li>
+<body>
+    <!-- nav start -->
+    <nav class="grid grid-cols-7 bg-primary p-2 ">
+        <!-- logo section -->
+        <div class="flex justify-center p-3 items-center gap-2  text-white col-span-2 ">
+            <img src="./assets/images/logo.png" class="h-12" alt="">
+            <h1 class="font-sans text-[18px] font-semibold">Learn more academy</h1>
+        </div>
+        <!-- link section -->
+        <div class=" col-span-5  ">
+
+            <ul class="flex  ml-12 mx-auto gap-16   items-center h-full">
+                <li class="ml-16"><a href="" class="font-semibold text-[17px] text-secondary underline">Home</a></li>
+                <li><a href="" class="font-semibold text-[17px] text-white hover:text-secondary">Courses</a></li>
+                <li><a href="" class="font-semibold text-[17px] text-white hover:text-secondary">About US</a></li>
+                <li><a href="" class="font-semibold text-[17px] text-white hover:text-secondary">Gallery</a></li>
+                <li><a href="" class="font-semibold text-[17px] text-white hover:text-secondary">Contact Us</a></li>
             </ul>
         </div>
-     </nav>
+
+    </nav>
+    <!-- end nav -->
+
+
+    <!-- crousel section start-->
+    <div class="relative flex h-[50vh] overflow-hidden bg-fixed bg-cover " style="background-image: url(./assets/images/bg.png);">
+        <!-- <img src="../assets/background.jpg" alt="" class="absolute fixed  w-full" > -->
+        <div class="flex  justify-center items-center w-full ">
+            <div class="z-50 w-full h-fit grid items-center text-white justify-center">
+                <h2 class="z-50 mx-auto  text-4xl font-bold">Learn More Academy</h2>
+                <h3 class="z-50 mx-auto my-1 font-semibold">Education is not preparation for life,education is life
+                    itself.</h3>
+                <div class="w-full flex justify-center items-center">
+
+                    <button class="bg-primary px-7 py-1 mx-auto font-semibold rounded-md hover:bg-green-800">
+                        Explore
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- crousel section end-->
+
+
+    <!--courses section  -->
+    <div class="wrapper bg-[#639494]">
+
+        <div class="w-[85%] mx-auto ">
+            <h2 class="text-secondary text-4xl font-semibold py-2">Courses</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))]">
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2 mx-auto">
+                    <a href="">
+                        <img src="./assets/images/course1.png" alt="">
+
+                    </a>
+
+                </div>
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2 mx-auto">
+                    <a href="">
+                        <img src="./assets/images/course2.png" alt="">
+
+                    </a>
+
+                </div>
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2 mx-auto">
+                    <a href="">
+                        <img src="./assets/images/course3.png " class="image object-cover " alt="">
+
+                    </a>
+
+                </div>
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2 mx-auto">
+                    <a href="">
+                        <img src="./assets/images/course4.png " class="image object-cover " alt="">
+
+                    </a>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <!--courses section end  -->
+
+
+
+        <!-- about us section start -->
+
+        <div class="w-[85%] mx-auto  mt-6">
+            <h2 class="text-secondary text-4xl font-semibold py-2">About US</h2>
+            <div class="grid grid-cols-6">
+                <div class="rounded-xl my-2 col-span-2 ">
+                    <a href="">
+                        <img src="./assets/images/g9.png" class="mx-auto" alt="">
+
+                    </a>
+
+                </div>
+
+
+
+                <div class=" rounded-xl my-2 col-span-4 w-[80%] text-white  ">
+                    <p class="leading-relaxed  text-xl">
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum. </p>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <!-- about us section end -->
+
+
+        <!--Gallary section  -->
+
+        <div class="w-[85%] mx-auto ">
+            <h2 class="text-secondary text-4xl font-semibold py-2">Gallery</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4 justify-center">
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2  mx-auto">
+                    <a href="">
+                        <img src="./assets/images/g1.png" alt="">
+
+                    </a>
+
+                </div>
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2 mx-auto ">
+                    <a href="">
+                        <img src="./assets/images/g2.png" alt="">
+
+                    </a>
+
+                </div>
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2  mx-auto">
+                    <a href="">
+                        <img src="./assets/images/g3.png" alt="">
+
+                    </a>
+
+                </div>
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2  mx-auto">
+                    <a href="">
+                        <img src="./assets/images/g4.png" alt="">
+
+                    </a>
+
+                </div>
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2  mx-auto">
+                    <a href="">
+                        <img src="./assets/images/g5.png " class="image object-cover " alt="">
+
+                    </a>
+
+                </div>
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2 mx-auto ">
+                    <a href="">
+                        <img src="./assets/images/g6.png " class="image object-cover " alt="">
+
+                    </a>
+
+                </div>
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2 mx-auto ">
+                    <a href="">
+                        <img src="./assets/images/g7.png  " class="image object-cover " alt="">
+
+                    </a>
+
+                </div>
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2 mx-auto">
+                    <a href="">
+                        <img src="./assets/images/g8.png  " class="image object-cover " alt="">
+
+                    </a>
+
+                </div>
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2  mx-auto">
+                    <a href="">
+                        <img src="./assets/images/g9.png  " class="image object-cover " alt="">
+
+                    </a>
+
+                </div>
+                <div class="w-[240px] h-[240px] bg-[#D9D9D9] rounded-xl my-2 mx-auto">
+                    <a href="">
+                        <img src="./assets/images/g10.png " class="image object-cover " alt="">
+
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- gallary section end -->
+
+        <!-- Contact us  -->
+        <div class="w-[85%] mx-auto  mt-6">
+            <h2 class="text-secondary text-4xl font-semibold py-2">Contact US</h2>
+            <div class="grid grid-cols-6">
+                <div class="rounded-xl my-2 col-span-2 ">
+                    <a href="">
+                        <img src="./assets/images/contact.png" class="mx-auto" alt="">
+
+                    </a>
+
+                </div>
+
+
+
+                <div class=" rounded-xl my-2 col-span-4 w-[80%] text-white  ">
+                    <form action="" class="max-w-3xl mx-auto p-4">
+                        <h2 class="text-white my-2 text-4xl mb-4 font-bold text-center">Message Us</h2>
+                        
+                        <div class="mb-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                          <label for="email" class="text-xl text-right sm:text-left sm:text-right sm:col-span-1">Email:</label>
+                          <input type="text" class="py-1 px-3 rounded-md col-span-2 sm:col-span-2" name="email" id="email">
+                        </div>
+                        
+                        <div class="mb-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                          <label for="message" class="text-xl text-right sm:text-left sm:text-right sm:col-span-1">Message:</label>
+                          <textarea class="py-1 px-3 rounded-md col-span-2 sm:col-span-2" name="message" id="message" rows="5"></textarea>
+                        </div>
+                        
+                        <div class="flex justify-center sm:justify-end mt-4">
+                          <input type="submit" value="Submit" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-[#082720] cursor-pointer">
+                        </div>
+                      </form>
+                      
+                </div>
+
+            </div>
+
+
+
+
+            <!-- contact us end -->
+
+
+        </div>
+
+
+
+        <!-- footer start -->
+
+        <div class="footer-main bg-primary mt-10">
+            <div class="w-[80%] grid grid-cols-8 mx-auto">
+                <div class="p-8 col-span-3">
+                    <h2 class="text-white font-semibold text-3xl">
+                        Learn more academy
+                    </h2>
+                    <div class="icons grid gap-2 grid-flow-col w-[40%] my-4">
+                        <i class='bx bxl-facebook-circle text-4xl text-[#E44A1D]'></i>
+                        <i class='bx bxl-instagram-alt text-4xl text-[#E44A1D]'></i>
+                        <i class="fa-brands fa-threads text-4xl text-[#E44A1D]"></i>
+                    </div>
+
+                </div>
+                <div class="col-span-2 py-3">
+                    <ul class="mx-auto text-center mt-4">
+                        <li><a href="" class="font-semibold text-white text-xl   my-4">Home</a></li>
+                        <li><a href="" class="font-semibold text-white text-xl   my-4">Courses</a></li>
+                        <li><a href="" class="font-semibold text-white text-xl   my-4">gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-2 py-3">
+                    <ul class="mx-auto text-center mt-4">
+                        <li><a href="" class="font-semibold text-white text-xl   my-4">Contact us</a></li>
+                        <li><a href="" class="font-semibold text-white text-xl   my-4">Privacy</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="footer">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.4506904814334!2d87.26992907614306!3d26.666064770645477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef6c7012c41479%3A0x83f322d51546ef30!2sVishwa%20Adarsha%20College%20%2F%20H.%20S.%20School!5e0!3m2!1sen!2snp!4v1722313805028!5m2!1sen!2snp"
+                width="100%" height="184" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="flex items-center justify-center py-5 bg-primary ">
+            <p class="text-white  text-xl">Designed & Developed by :
+                <a href="https://github.com/nabinghimire0" target="_blank">
+                    Rohan
+                </a>
+            </p>
+
+        </div>
+    </div>
+
 
 </body>
+
 </html>
